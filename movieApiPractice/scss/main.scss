@@ -1,0 +1,110 @@
+@import "common.scss";
+@import "search.scss";
+@import "header.scss";
+@import "movies.scss";
+
+html {
+    position:relative;
+}
+
+.bg-box {
+    min-height:100vh;
+    height:100%;
+    width:100vw;
+    position:absolute;
+    top:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+
+    .bg-img {
+        width:100%;
+        height:100vh;
+        min-height:1000%;
+        position:absolute;
+        top:0;
+        right:0;
+        background:url(../images/background.png);
+        background-repeat: repeat-y;
+        background-position:right;
+        z-index:-1;
+        animation: bg-ani 100s linear forwards; /* 애니메이션 적용 */
+    }
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:auto;
+
+    .title {
+        margin:10vh 0 0 50px;
+        color:#fff;
+        font-size:25rem;
+        font-weight:900;
+        text-shadow:1px 1px 10px #000;
+        cursor: pointer;
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .menu-wrap { 
+        display:flex;
+        flex-direction:column;
+        gap:100px;
+        margin:10vh 0 10vh;
+        font-family: 'Anton', sans-serif;
+    
+        .menu {
+            margin-left:100px;
+            font-size:13rem;
+            font-weight:400;
+    
+            span {
+                cursor:pointer;
+    
+                &:hover {
+                    color:#fff;
+                    text-shadow:1px 1px 5px #000;
+                }
+            }
+        }
+    }
+
+    .header-wrap {
+        align-self:flex-start
+    }
+}
+
+
+@keyframes bg-ani {
+    0%{
+        background-position-y:0;
+    }100%{
+        background-position-y:100%;
+    }
+}
+
+@media (max-width: 700px){ 
+    main {
+        .title {
+            margin:5vh 0 0 40px;
+            font-size:18rem;
+        }
+        .menu-wrap {
+            margin: 5vh 0 5vh;
+            gap:50px;
+
+            .menu {
+                margin-left:60px;
+                font-size:10rem;
+            } 
+        } 
+    }
+
+    .bg-box {
+        .bg-img {
+            right: -90px;
+        }
+    }
+}

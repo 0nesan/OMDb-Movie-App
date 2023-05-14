@@ -1,0 +1,28 @@
+{
+  "name": "movieapipractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0nesan/movieApiPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0nesan/movieApiPractice/issues"
+  },
+  "homepage": "https://github.com/0nesan/movieApiPractice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.56.1"
+  }
+}

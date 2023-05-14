@@ -1,0 +1,50 @@
+@import "common.scss";
+
+header {
+    max-width:1500px;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+
+    .header-wrap {
+        display:flex; 
+        align-items:center;
+        flex-direction:column;
+        gap:20px;
+        width:100%;
+        max-width:1500px;
+        padding:20px 30px;
+
+        .title {
+            color:#fff;
+            font-size:4.5rem;
+            font-weight:900;
+            text-shadow:1px 1px 5px #000;
+            cursor: pointer;
+        }
+        
+        .menu-wrap { 
+            display:flex;
+            align-items:center;
+            gap:30px;
+
+            .menu {
+                font-size:2.5rem;
+                font-weight:400;
+        
+                span {
+                    cursor:pointer;
+        
+                    &:hover {
+                        color:#fff;
+                        text-shadow:1px 1px 3px #000;
+                    }
+
+                    &.click {
+                        color:#fff;
+                        text-shadow:1px 1px 3px #000;
+                    }
+                }
+            }
+        }
+    }
+}
