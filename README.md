@@ -1,5 +1,5 @@
 # :clapper: 영화 검색
-배포 사이트 : https://dulcet-scone-8e1afa.netlify.app/
+배포 사이트 : https://dulcet-scone-8e1afa.netlify.app/](https://sooosan-movie-site.netlify.app/
 ### :exclamation: 필수
 
 - [x] 영화 제목으로 검색 가능하고 검색된 결과의 영화 목록이 출력돼야 합니다.
